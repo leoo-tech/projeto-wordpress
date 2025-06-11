@@ -28,9 +28,10 @@ O processo de criação é dividido em duas partes:
     * **Health check protocol**: Mantenha **HTTP**.
     * **Health check path**: Use `/`. Se você instalou um plugin de health check, pode usar `/health`.
     * Expanda **Advanced health check settings** e em **Success codes**, defina como `200,302`. Isso é importante para que o WordPress passe na verificação, mesmo ao redirecionar para a página de setup.
+  ![image]()
 
-    <img src="/imgs/destinonome.png" alt="Configuração do Nome do Target Group">
-    <img src="/imgs/destinoIntegro.png" alt="Configuração do Health Check">
+    <img src="https://github.com/user-attachments/assets/29eae22b-5117-4fa0-8066-452031a5190b" alt="Configuração do Nome do Target Group">
+    <img src="https://github.com/user-attachments/assets/4e375cd0-62bb-42bc-8009-db1727ee5624" alt="Configuração do Health Check">
 
 6.  Clique em **Next**. Na tela "Register targets", **não adicione nenhuma instância manualmente**. O Auto Scaling Group fará isso de forma automática. Apenas clique em **Create target group**.
 
@@ -41,6 +42,7 @@ O processo de criação é dividido em duas partes:
 1.  Agora, no menu lateral, navegue para **EC2 > Load Balancers**.
 2.  Clique em **Create Load Balancer**.
 3.  Selecione **Application Load Balancer** e clique em **Create**.
+4.  ![image](https://github.com/user-attachments/assets/00798e09-7285-4cf1-8988-2f7f35e41f30)
 
 #### Configurações do Load Balancer:
 
@@ -52,14 +54,16 @@ O processo de criação é dividido em duas partes:
 4.  **Security groups**: Remova o SG `default` e adicione o **`lb-sg`** que criamos.
 5.  **Listeners and routing**:
     * A regra padrão para a porta **HTTP:80** deve encaminhar o tráfego (Forward to) para o Target Group que acabamos de criar (`wordpress-tg`).
+![image]()
 
-    <img src="/imgs/LBnome.png" alt="Configuração do Nome do LB">
-    <img src="/imgs/LBrede.png" alt="Configuração de Rede do LB">
-    <img src="/imgs/destino.png" alt="Configuração do Listener">
+
+    <img src="https://github.com/user-attachments/assets/6ac5f447-f453-48ba-a02b-dc9fd9148353" alt="Configuração do Nome do LB">
+    <img src="https://github.com/user-attachments/assets/55f582a5-5dd3-415b-a435-8e49cc8f8d8c" alt="Configuração de Rede do LB">
+    <img src="https://github.com/user-attachments/assets/27895aa5-cedc-40d6-b7b0-994dab1bc4f8" alt="Configuração do Listener">
 
 6.  Revise o sumário e clique em **Create Load Balancer**.
 
-<img src="/imgs/LBfinal.png" alt="Criação Final do LB">
+<img src="https://github.com/user-attachments/assets/75862067-bf82-4acf-aba6-1b74a837c0ca" alt="Criação Final do LB">
 
 ---
 
