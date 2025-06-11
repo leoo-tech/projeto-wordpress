@@ -23,7 +23,7 @@ Chegamos à etapa final da configuração da nossa infraestrutura. O Auto Scalin
 2.  **Launch template**: Selecione o `wordpress-template` que criamos na etapa anterior. Verifique se a versão está como **Latest** (Mais recente).
 3.  Clique em **Next**.
 
-<img src="/imgs/scalingNome.png" alt="Selecionando o Launch Template">
+<img src="https://github.com/user-attachments/assets/87ecde67-7fae-4019-aefe-f042083ce77a" alt="Selecionando o Launch Template">
 
 ---
 
@@ -33,7 +33,7 @@ Chegamos à etapa final da configuração da nossa infraestrutura. O Auto Scalin
 2.  **Availability Zones and subnets**: Selecione as **duas sub-redes privadas** que criamos. É crucial usar as sub-redes privadas para manter nossas instâncias seguras e não expostas diretamente à internet. O ASG irá distribuir as instâncias entre essas duas sub-redes para garantir a alta disponibilidade.
 3.  Clique em **Next**.
 
-<img src="/imgs/scalingRede.png" alt="Configurando a Rede do ASG">
+<img src="https://github.com/user-attachments/assets/a41d4df0-ff3f-4b52-8354-a4bce43e7168" alt="Configurando a Rede do ASG">
 
 ---
 
@@ -44,7 +44,9 @@ Chegamos à etapa final da configuração da nossa infraestrutura. O Auto Scalin
 3.  Selecione o Target Group que criamos anteriormente: `wordpress-tg`. O ASG agora saberá onde registrar as novas instâncias.
 4.  Clique em **Next**.
 
-<img src="/imgs/scalingLB.png" alt="Anexando o Load Balancer">
+<img src="https://github.com/user-attachments/assets/45866103-70dc-434b-8044-234d87b1a132" alt="Anexando o Load Balancer">
+![image](https://github.com/user-attachments/assets/46998811-c1d1-4649-b245-d7a7582c5962)
+
 
 ---
 
@@ -56,7 +58,8 @@ Chegamos à etapa final da configuração da nossa infraestrutura. O Auto Scalin
 4.  **Scaling policies**: Mantenha como **None** (Nenhuma) por enquanto.
 5.  Clique em **Next** até chegar à última tela de revisão.
 
-<img src="/imgs/scalingQTN.png" alt="Definindo o Tamanho do Grupo">
+<img src="https://github.com/user-attachments/assets/cb2b2132-d5da-44a2-a80f-33dbfc68db0e" alt="Definindo o Tamanho do Grupo">
+![image](https://github.com/user-attachments/assets/fbe506c4-438c-4b53-896f-b6fec95bdbaf)
 
 ---
 
@@ -65,7 +68,7 @@ Chegamos à etapa final da configuração da nossa infraestrutura. O Auto Scalin
 1.  Revise todas as configurações na última página.
 2.  Clique em **Create Auto Scaling group**.
 
-<img src="/imgs/scalingFinal.png" alt="Criação Final do ASG">
+<img src="https://github.com/user-attachments/assets/8958ff4f-8dc4-430f-9d9c-26609ce40feb" alt="Criação Final do ASG">
 
 ---
 
