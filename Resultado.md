@@ -18,7 +18,7 @@ Chegamos ao momento da verdade! Com toda a infraestrutura configurada, é hora d
 
 > ✅ **Checkpoint:** Se você vê esta tela, significa que o Load Balancer, o Target Group, o Auto Scaling Group e as instâncias EC2 com Docker estão todos funcionando em harmonia!
 
-<img src="https://github.com/user-attachments/assets/14c49801-873c-488c-b095-3eee1c139d71" alt="Tela de Seleção de Idioma do WordPress">
+<img src="https://github.com/user-attachments/assets/e8f7558a-c957-412b-84f6-aa3f33e3596b" alt="Tela de Inicial do WordPress">
 
 ---
 
@@ -35,7 +35,7 @@ Chegamos ao momento da verdade! Com toda a infraestrutura configurada, é hora d
 > ✅ **Checkpoint:** Ao concluir a instalação, o WordPress salvou todas essas informações no banco de dados **RDS**, confirmando que a conexão está funcionando perfeitamente.
 
 <img src="https://github.com/user-attachments/assets/0510ef52-e289-4f31-a81a-4beff1b77469" alt="Formulário de Instalação do WordPress">
-<img src="https://github.com/user-attachments/assets/bc15f454-3602-41ff-b493-69d3dce96303" alt="Instalação Concluída">
+<img src="https://github.com/user-attachments/assets/24d7ead5-1704-4430-b734-81b08d082fe5" alt="Tela de login">
 
 ---
 
@@ -53,7 +53,7 @@ Agora, vamos garantir que os arquivos e os posts são salvos de forma permanente
 > * Ao **publicar o post**, o texto e as informações foram salvos no banco de dados **RDS**.
 > A persistência dos seus dados está confirmada!
 
-<img src="https://github.com/user-attachments/assets/08705f5c-54b0-4223-a667-75ddf642c877" alt="Publicando um Post com Imagem">
+<img src="https://github.com/user-attachments/assets/7e9f3db4-e8ae-4b55-a2c9-1f9550cce360" alt="Teste de Persistência">
 
 ---
 
