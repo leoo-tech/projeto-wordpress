@@ -24,8 +24,9 @@ O Launch Template é o "molde" ou "blueprint" para nossas instâncias EC2. Ele d
 4.  **Instance type**: Escolha **t2.micro**, que se qualifica para a camada gratuita da AWS.
 5.  **Key pair (login)**: **Não** selecione um par de chaves. O acesso será gerenciado de forma segura pelo Session Manager da AWS, e as instâncias devem ser automatizadas, não acessadas manualmente.
 
-<img src="/imgs/Nome%20e%20descrição%20do%20modelo%20de%20execução.png" alt="Configurações Básicas do Launch Template">
-<img src="/imgs/imagens%20do%20sistema.png" alt="Seleção de AMI e Tipo de Instância">
+<img src="https://github.com/user-attachments/assets/be33d073-02d7-410c-a6d7-49c764023664" alt="Configurações Básicas do Launch Template">
+<img src="https://github.com/user-attachments/assets/787af91e-2626-4f5a-86ad-2d1e06f4ccbe" alt="Seleção de AMI e Tipo de Instância">
+<img src="https://github.com/user-attachments/assets/f1923401-2407-4720-aa86-1a0440815e7c" alt="Seleção de AMI e Tipo de Instância">
 
 ---
 
@@ -34,7 +35,7 @@ O Launch Template é o "molde" ou "blueprint" para nossas instâncias EC2. Ele d
 1.  **Subnet**: **Não** selecione uma sub-rede. Deixe este campo em branco, pois o Auto Scaling Group será responsável por escolher as sub-redes privadas corretas para lançar as instâncias.
 2.  **Security groups**: Selecione **`ec2-sg`**. Este é o único Security Group que deve ser anexado diretamente às instâncias. Ele já possui as regras necessárias para se comunicar com o Load Balancer, EFS e RDS.
 
-<img src="/imgs/configRedes.png" alt="Configurações de Rede do Launch Template">
+<img src="https://github.com/user-attachments/assets/ee9cebe3-d75f-4a45-9335-b414e1c1e394" alt="Configurações de Rede do Launch Template">
 
 ---
 
@@ -100,7 +101,7 @@ EOF'
 sudo -u ec2-user bash -c "cd /home/ec2-user && docker compose up -d"
 ```
 
-<img src="/imgs/Detalhes%20avançados.png" alt="Campo User Data">
+
 
 ---
 
